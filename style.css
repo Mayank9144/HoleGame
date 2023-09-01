@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+  display: flex;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+}
+body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gameover {
+  display: none;
+}
+h2 {
+  text-align: center;
+  border: 3px solid black;
+  padding: 5px 30px;
+  box-shadow: 0px 0px 3px black, 0px 0px 5px red;
+}
+.score {
+  position: fixed;
+  top: 20px;
+}
+
+.gameScreen {
+  position: relative;
+  border: 1px solid black;
+  width: 300px;
+
+  height: 80vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+.wall {
+  position: absolute;
+  width: 300px;
+  height: 20px;
+  background-color: black;
+  animation: 3s linear 1s infinite;
+}
+.hole {
+  position: absolute;
+  left: 0px;
+  width: 30px;
+  min-width: 30px;
+  height: 20px;
+  background-color: white;
+}
+
+.char {
+  position: absolute;
+  left: 270px;
+  bottom: 0%;
+  height: 20px;
+  width: 10%;
+  background-color: red;
+}
+.move {
+  width: 4rem;
+  height: 4rem;
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+  padding: 1.25rem 0;
+  color: #e0e0e0;
+  user-select: none;
+}
+
+@keyframes moveWall {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: 100%;
+  }
+
+}
+@media screen and (max-width:412px) {
+    .move{
+        width: 20px;
+    }
+}

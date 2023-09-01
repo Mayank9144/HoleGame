@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go in Hole!</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="gameover">
+        <h1>GAMEOVER!<br>Click ENTER to restart.</h1>
+        <h2>Score: <span>0</span></h2>
+    </div>
+    <h2 class="score">Start[Enter]</h2>
+    <div class="container">
+        <div class="move left" ontouchstart="move(0)"><<</div>
+    <div class="gameScreen">
+        <div class="wall">
+            <div class="hole"></div>
+        </div>
+        <div class="char"></div>
+    </div>
+    <div class="move right" ontouchstart="move(1)">>></div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
